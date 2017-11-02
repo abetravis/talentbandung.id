@@ -73,7 +73,7 @@ body{
 
 .hero form button{
     position         : absolute;
-    top              : 5px;
+    top              : 10px;
     right            : 20px;
     font-size        : 36px;
     color            : #e3a6a9;
@@ -157,3 +157,103 @@ body{
 	.grid-item{ width: 100% }
 }
     
+.hero-single{
+  height: 700px;
+  background-image: url("image/bg-single.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.hero-single h1{
+  margin: 0;
+}
+
+.hero-single .subtitle{
+  margin-top: 180px;
+  display: inline-block;
+}
+
+.hero-single .title{
+  display: block;
+}
+
+.hero-single p{
+  width: 635px;
+  margin: 100px auto;
+  line-height: 30px;
+}
+
+.slider{
+  text-align: center;
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  /*padding: 0;*/
+  justify-content: center;
+}
+
+
+.g img{
+  margin: 8px;
+}
+
+.g button{
+  border: none;
+  background-color: white;
+  height: 240px;
+  width: 80px;
+}
+.g i{
+  font-size: 50px;
+  font-weight: 1px;
+}
+
+.g{
+  float: left;
+}
+
+.gmap{
+  background-image: url("image/map.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  text-align: center;
+}
+
+.for-button{
+  margin-top: 465px;
+  display: inline-block;
+}
+
+
+.for-button button{
+  height: 55px;
+  width: 300px;
+  padding-bottom: 13px;
+  border-radius: 30px;
+  border: none;
+  margin: 0 8px;
+  color: white;
+  font-size: 18px;
+}
+
+.for-button .button-1{
+  background-color: #22B8CF;
+}
+
+.for-button .button-2{
+  background-color: #329AF0;
+}
+
+.for-button i{
+  font-size: 30px;
+  margin-right: 12px;
+}
+
+.btn-text {
+margin-bottom: 5px
