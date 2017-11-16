@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="text" id="myUL"> -->
+    <input type="text" id="filter" >
+    <ul id='list-buah'>
+        
+    </ul>
+    <script src="jquery-min.js"></script>
+    <script>
+    
+    var buah = ['jeruk','nanas','mangga','seteroberi','apel'];
+    var listBuah = $('#list-buah');
+
+    for (var i=0; i < buah[i].length; i++) {
+    var listItem = '<li class ="buah">'+ buah[i] + '</li>';
+    listBuah.append(listItem);
+    }
+
+    var filter = $('#filter');
+    filter.keyup(filterBuah);
+
+    function filterBuah() {
+        var buah = $('.buah');
+        for (var i=0; i<buah.length; i++){
+            var item = $(buah[i]).text().toLowerCase();
+            if (item.indexOf (filter.val().toLowerCase ()) != -1){
+                            
+                $(buah[i]).slideDown();
+            }
+            else{ 
+                $(buah[i]).slideUp()
+            }
+        }
+
+    }
+    </script>
+    
+    </body>
+</html>
+   
+
