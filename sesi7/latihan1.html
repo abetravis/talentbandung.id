@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div id="app">
+
+        <!-- <input type="text" v-model="message"> 
+        <button v-on:click="sayHello">sapa</button>
+        <p>{{message}} </p> -->
+    <ol>
+        <item-buah
+            v-for="buah in daftarBuah"
+            v-bind:buah="buah"
+            v-bind:key="buah.id">
+        </item-buah>
+    </ol>
+
+    </div>
+      
+    <script src="vue.js"></script>
+    <script>
+    
+    Vue.component('item-buah',{
+        props: ["buah"],
+        template: '<li>{{buah.nama}}</li>'
+    });
+    
+    
+    
+    var app = new Vue({
+        el : '#app',
+        data: {
+            daftarBuah: [
+                {
+                    id:0,
+                    nama:"Aple",
+                },
+                {
+                    id:0,
+                    nama:"Mangga",
+                },
+                {
+                    id:0,
+                    nama:"Jeruk",
+                },
+                {
+                    id:0,
+                    nama:"Lemon",
+                }],
+            },
+            
+    });
+        
+    
+    </script>
+</body>
+</html>

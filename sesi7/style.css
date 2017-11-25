@@ -1,0 +1,259 @@
+*{
+    box-sizing       : border-box;
+}
+
+
+body{
+    background-color : #f6f0f0;
+    background-image : url("image/background.png");
+    background-repeat: no-repeat;
+    background-size  : 100%; /*cover/contain */
+    font-family      : 'Roboto', sans-serif;
+}
+
+.site-content{
+    width            : 1125px;
+    max-width        : 100%;
+    margin           : 0 auto;
+
+}
+
+.hero {
+    padding          : 120px 15px;
+    text-align       : center;
+}
+.title, .subtitle{
+    display          : block;
+}
+.title{
+    font-family      : 'playfair display';
+}
+
+.subtitle{
+
+    font-family      : 'caveat';
+    font-weight      : normal;
+}
+
+.hero .title{
+    font-size        : 72px;
+}
+
+.hero .subtitle{
+    font-size        : 64px;
+}
+
+.hero p{
+    font-size        : 22px;
+    font-weight      : 300;
+}
+
+.hero form{
+    max-width        : 550px;
+    /*background     : red;*/
+    margin           : 70px auto 0;
+    position         : relative;
+}
+
+.hero form input{
+    width            : 100%;
+    font-size        : 16px;
+    padding          : 20px 70px 25px 25px;
+    border-radius    : 45px;
+    border           : 2px solid white;
+    box-shadow       : 0 10px 13px rgba(0,0,0,0.05);
+    outline            : none;
+    transition: border-color 300ms ease-out;
+
+}
+
+.hero form input:focus{
+    border: 2px solid #57adfe;
+}
+
+.hero form button{
+    position         : absolute;
+    top              : 10px;
+    right            : 20px;
+    font-size        : 36px;
+    color            : #e3a6a9;
+    border           : none;
+    background       : none;
+}
+
+.grid-layout:after{
+    content:"";
+    clear: both;
+    display: block;
+
+}
+
+.grid-item{
+    width: 33.3333%;
+    float: left;
+    padding: 0 15px;
+}
+
+.grid-item:nth-child(3n+1){
+    clear: both;
+}
+
+.taman{
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    box-shadow: 0 9px 18px rgba(0,0,0,0.05);
+}
+
+.taman figure {
+    margin:0;
+
+}
+
+.taman figure img{
+    width:100%;
+}
+.taman-detail{
+    padding:15px;
+    text-align: center;
+}
+.taman a{
+    text-decoration: none;
+}
+.taman-detail h2{
+    font-size: :28px;
+    margin: 5px 0 15px;
+}
+.taman-detail .title{
+    
+    color: #363636;
+}
+.taman-detail .subtitle{
+ color: #888;
+}
+
+.taman-detail p{
+    font-size: 14px;
+    color: #929292;
+}
+.footer{
+    text-align: center;
+    padding: 90px 15px 40px;
+    color:#535353;
+}
+
+
+@media screen and (max-width:990px){
+    .grid-item{
+    width:50%
+    }
+    .grid-item:nth-child(3n+1){clear:none}
+    .grid-item:nth-child(2n+1){clear:both}
+}
+
+@media screen and (max-width: 480px){
+	.hero{ padding: 30px 15px;}
+	.hero .subtitle{ font-size: 48px}
+	.hero .title{font-size: 50px;}
+	.grid-item{ width: 100% }
+}
+    
+.hero-single{
+  height: 700px;
+  background-image: url("..\image\bg-single.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.hero-single h1{
+  margin: 0;
+}
+
+.hero-single .subtitle{
+  margin-top: 180px;
+  display: inline-block;
+}
+
+.hero-single .title{
+  display: block;
+}
+
+.hero-single p{
+  width: 635px;
+  margin: 100px auto;
+  line-height: 30px;
+}
+
+.slider{
+  text-align: center;
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  /*padding: 0;*/
+  justify-content: center;
+}
+
+
+.g img{
+  margin: 8px;
+}
+
+.g button{
+  border: none;
+  background-color: white;
+  height: 240px;
+  width: 80px;
+}
+.g i{
+  font-size: 50px;
+  font-weight: 1px;
+}
+
+.g{
+  float: left;
+}
+
+.gmap{
+  background-image: url("image/map.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  text-align: center;
+}
+
+.for-button{
+  margin-top: 465px;
+  display: inline-block;
+}
+
+
+.for-button button{
+  height: 55px;
+  width: 300px;
+  padding-bottom: 13px;
+  border-radius: 30px;
+  border: none;
+  margin: 0 8px;
+  color: white;
+  font-size: 18px;
+}
+
+.for-button .button-1{
+  background-color: #22B8CF;
+}
+
+.for-button .button-2{
+  background-color: #329AF0;
+}
+
+.for-button i{
+  font-size: 30px;
+  margin-right: 12px;
+}
+
+.btn-text {
+margin-bottom: 5px
