@@ -236,6 +236,7 @@ body{
 .button.home{
 	background-color: #22b8cf;
 	box-shadow:0 5px 10px rgba(34,184,207,.4);
+	position: absolute;
 }
 .button.direction{
 	background-color: #329af0;

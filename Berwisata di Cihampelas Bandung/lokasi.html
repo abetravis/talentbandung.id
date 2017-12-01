@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jelajah Cihampelas Bandung</title>
+        <link href="https://fonts.googleapis.com/css?family=Caveat%7CPlayfair+Display:700%7CRoboto:300,400,400i" rel="stylesheet">
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="assets/css/lokasi.css">
+        <!-- <link rel="stylesheet" href="css/history.css"> -->
+        
+        <style>
+                #map {
+                 height: 400px;
+                 width: 100%;
+                 border: 1px solid transparent;
+	             border-radius: 10px;
+	             margin-bottom: 5rem;
+                }
+        </style>
+</head>
+<body>
+        <div class="container" onscroll="navSticky()">
+				<nav class="navbar">
+				  <div class="list-cont" id="topNav">
+          <a href="lokasi.html" class="active">Lokasi</a>
+          <a href="galeri.html">Galeri</a>
+					<a href="jelajah.html">Jelajah</a>
+					<a href="sejarah.html">Sejarah</a>
+					<a href="index.html">Beranda</a>
+					<div class="list-contr" id="topNav">
+					<!-- <span class="title-banner"></span> --><img src="assets/image/talent.png" alt=""><img src="assets/image/stunningL.png" alt="">
+					
+				  	</div>
+				  </div>
+          </nav>
+        </div>
+        <div class="main-title">
+                <span class="content-title">Lokasi Cihampelas Bandung</span>
+              </div>
+              <div class="map-content">
+                <div id="map"></div>
+        
+        <script>
+          function initMap() {
+            var uluru = {lat: -6.893664, lng: 107.604122};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 17,
+              center: uluru
+            });
+            var marker = new google.maps.Marker({
+              position: uluru,
+              map: map
+            });
+          }
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAA4_Wg2VSYP8OSQmEmMAynTuxY2-YlVjo&callback=initMap">
+        </script>  
+
+    <footer class="footer">
+    <p>&copy; Abdurachman Web Batch2 Talent Bandung 2017</p>
+    </footer>
+</body>
+</html>
+

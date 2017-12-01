@@ -1,0 +1,81 @@
+* {
+	box-sizing: border-box;
+    
+    
+}
+
+.main {
+	margin: 3rem;
+}
+
+.main-history {
+	font-size: 2rem;
+	display: block;
+}
+
+.main-title {
+	margin: auto;
+	padding: 0 3rem;
+}
+
+.main-title .title {
+	margin: auto;
+	display: block;
+	/* font-family: 'Caveat';
+	font-weight: normal; */
+	font-size: 3.5rem;
+	color: rgb(13, 90, 121);
+	font-weight: bold;
+}
+
+.main-title .subtitle {
+	margin: auto;
+	display: inline-block;
+	/* display: block; */
+	font-size: 2.7rem;
+	font-weight: normal;
+	
+}
+
+
+.main-content > .content-main {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-gap: 5px;
+	margin: 2rem auto;
+	padding: 3rem 1rem;
+	position: relative;
+	transition: 0.5s;
+	border-bottom: 1px solid #DBDBDB;
+}
+
+.navbar {
+	margin: auto;
+}
+.content-quote {
+	color: #8a8a8a;
+	display: block;
+}
+
+.content-quotes {
+	
+}
+
+figure img {
+	max-width: 90%;
+	position: relative;
+	margin: auto 30px;
+}
+
+.content-main > article, 
+.content-quote, 
+.content-quotes {  
+	line-height: 1.9rem;
+}
+
+article {
+	text-align: justify;
+	display: block;
+	position: relative;
+	margin: auto 30px;
+}
