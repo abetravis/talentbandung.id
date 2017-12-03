@@ -6,7 +6,7 @@ body{
 	background-color : #f8f9fa;
 	background-image : url(../image/background.jpg);
 	background-repeat: no-repeat;
-	background-size  : 20%; /* cover/contain */
+	background-size  : 100%; /* cover/contain */
 	margin: 0;
 	font-family      : Roboto, sans-serif;
 }
@@ -19,7 +19,7 @@ body{
 .container, .carousel-title{
 
 	text-align: center;
-	border-bottom: 4px solid rgb(70, 72, 73);
+	border-bottom: 1px solid rgb(13, 90, 121);
 }
 .hero{
 	padding   : 10px 15px;
@@ -32,11 +32,12 @@ body{
 
 .title{
 	font-family: 'Playfair Display';
+	box-shadow: 1px;
 }
 
 .subtitle{
 	font-family: 'Caveat';
-	font-weight: normal;
+	font-weight: bold;
 }
 
 .hero .title{
@@ -85,7 +86,7 @@ body{
 	border-radius: 50px;
 	box-shadow   : 1px 2px 16px 1px rgba(0,0,0,0.2);
 	background-color: white;
-	color: #484848;
+	color: #000000;
 	z-index: 1;
 	outline: none;
 	width: 40px;
@@ -172,7 +173,7 @@ body{
 .list-cont > a {
 	float          : right;
 	display        : block;
-	color          : grey;
+	color          : rgb(0, 0, 0);
 	text-align     : center;
 	padding        : 14px 16px;
 	text-decoration: none;

@@ -120,8 +120,8 @@ body{
 }
 
 @media screen and (max-width:990px){
-	.grid-item{ width: 50% }
-	.grid-item:nth-child(3n+1){ clear: none }
+	.grid-item{ width: 90% }
+	/* .grid-item:nth-child(3n+1){ clear: none } */
 	.grid-item:nth-child(2n+1){ clear: both }
 }
 

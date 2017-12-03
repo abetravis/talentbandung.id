@@ -3,21 +3,22 @@
 }
 
 body{
-	background-color :transparent;
-	background-image : url(../image/background.png);
+	background-color : #f8f9fa;
+	background-image : url(../image/background.jpg);
 	background-repeat: no-repeat;
 	background-size  : 100%; /* cover/contain */
 	margin: 0;
+	/* text-align: center; */
 	font-family      : Roboto, sans-serif;
 }
 
 .site-content,.container{
 	max-width: 100%;
-	margin: 0 auto;
+	margin: 0px auto;
 }
 
 .hero{
-	padding   : 50px 15px;
+	padding   : 80px 5px;
 	text-align: center;
 }
 
@@ -98,14 +99,16 @@ body{
 }
 
 .grid-item{
-	width: 33.3333%;
+	width: 50%;
 	float: left;
 	padding: 0 15px;
-	margin: 10px 100px;
+	text-align: center;
+	
 }
 
 .grid-item:nth-child(2n+1){
 	clear: both;
+	
 }
 
 .wisata{
@@ -154,6 +157,11 @@ body{
 	.hero .subtitle{ font-size: 48px}
 	.hero .title{font-size: 50px;}
 	.grid-item{ width: 100% }
+}
+
+.content-quote {
+	color:black;
+	display: block;
 }
 
 .description{
@@ -270,7 +278,7 @@ body{
 .list-cont > a {
 	float          : right;
 	display        : block;
-	color          : grey;
+	color          : rgb(2, 0, 0);
 	text-align     : center;
 	padding        : 14px 16px;
 	text-decoration: none;

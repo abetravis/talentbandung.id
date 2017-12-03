@@ -18,6 +18,19 @@ body{
 	font-family      : Roboto, sans-serif;
 }
 
+@media screen and (max-width:990px){
+	.grid-item{ width: 96% }
+	.grid-item:nth-child(3n+1){ clear: none }
+	.grid-item:nth-child(2n+1){ clear: both }
+}
+
+@media screen and (max-width: 480px){
+	.hero{ padding: 30px 15px;}
+	.hero .subtitle{ font-size: 48px}
+	.hero .title{font-size: 50px;}
+	.grid-item{ width: 100% }
+}
+
 .site-content,.container{
 	max-width: 100%;
 	margin: 0 auto;
@@ -288,7 +301,7 @@ body{
 .list-cont > a {
 	float          : right;
 	display        : block;
-	color          : grey;
+	color          : rgb(2, 0, 0);
 	text-align     : center;
 	padding        : 14px 16px;
 	text-decoration: none;
